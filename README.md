@@ -1,7 +1,7 @@
 # tf-Metasurface_Optimization
 Optimization of single-element metasurface parameters using tensorflow and ~5600 Lumerical simulations as training data. Simulations performed under normally incident light. The features that define metasurface are the 1) length 2) width 3) height 4) x-direction periodicity 5) y-direction periodicity. The output is the phase spectrum around and across the visible at increments of 5 nm (450 nm - 800 nm)
 
-For the powerpoint, there are animations so I recommend watching it in slide show mode.
+For the powerpoint, there are animations so I recommend watching it in slide show mode. There are 
 
 _**Scripts to follow soon**_
 
@@ -13,7 +13,7 @@ Metasurfaces are used to manipulate light in various manners for a plethora of a
 
 In performing these vast parameter sweeps, researchers unknowingly built a powerful dataset. During my time at Harvard, I realized this and decided to aggregate some few thousand of my simulations and use it as a proof of concept that there exists a better and more efficient way to optimize metasurface parameters; deep learning. 
 
-Attached is part of the presentation I gave to my colleagues at the Capasso Group in Harvard University's Applied Physics Department along with some results using the scatternet repo from MIT. The Capaso group is primarily comprised of physicists and thus a component of this presentation is on some of the basics of neural networks.
+Attached is part of the presentation for the talk I gave to my colleagues at the Capasso Group in Harvard University's Applied Physics Department along with some results using the scatternet repo from MIT. The Capaso group is primarily comprised of physicists and thus a component of this presentation is on some of the basics of neural networks, which I think might be heplful to some people. Given that the talk was oral and the slides were merely visual aids, I've added some notes at the bottom of some slides for clarity. 
 
 Due to the success with the scatternet repo (Nanophotonic Particle Simulation and Inverse Design), I have now built a better/simpler version designed for metasurface parameter optimization. Currently, there is only code for the forward design, though the inverse design is the next step. I will not be further developing my inverse design code due to time limitations and thus will not be posting it. I would highly recommend taking a look at the inverse design developed in the scatternet repo. Let it be noted that even though this repo is only for the forward design and thus does not alleviae the problem of brute force, it does offer two things:
 
