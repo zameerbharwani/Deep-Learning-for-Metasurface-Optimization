@@ -23,5 +23,5 @@ Due to the success with the scatternet repo (Nanophotonic Particle Simulation an
 
 **Definitions**:
 
-Forward Design: Given a set of input parameters that define a metasurface, predict the phase spectrum
+Forward Design: Given a set of input parameters that define a metasurface, predict the phase spectrum <b/r>
 Inverse Design: Given a desired phase spectrum, what paramaters result in said phase spectrum?
