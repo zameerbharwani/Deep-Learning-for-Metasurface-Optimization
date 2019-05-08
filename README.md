@@ -15,4 +15,13 @@ In performing these vast parameter sweeps, researchers unknowingly built a power
 
 Attached is part of the presentation I gave to my colleagues at the Capasso Group in Harvard University's Applied Physics Department along with some results using the scatternet repo from MIT. The Capaso group is primarily comprised of physicists and thus a component of this presentation is on some of the basics of neural networks.
 
-Due to the success with the scatternet repo, I have now built a better/simpler version designed for metasurface parameter optimization. Currently, there is only code for the forward design, though the inverse design is the next step. I will not be further developing my inverse design code due to time limitations and thus will not be posting it.
+Due to the success with the scatternet repo (Nanophotonic Particle Simulation and Inverse Design), I have now built a better/simpler version designed for metasurface parameter optimization. Currently, there is only code for the forward design, though the inverse design is the next step. I will not be further developing my inverse design code due to time limitations and thus will not be posting it. I would highly recommend taking a look at the inverse design developed in the scatternet repo. Let it be noted that even though this repo is only for the forward design and thus does not alleviae the problem of brute force, it does offer two things:
+
+1) Since deep learning is merely vectors/matrices, all computations are analytical and faster by up to 1200x compared to the simulation methods used currently, which are numerical
+
+2) This code for the forward design sets the foundation for the inverse desgin
+
+**Definitions**:
+
+Forward Design: Given a set of input parameters that define a metasurface, predict the phase spectrum
+Inverse Design: Given a desired phase spectrum, what paramaters result in said phase spectrum?
