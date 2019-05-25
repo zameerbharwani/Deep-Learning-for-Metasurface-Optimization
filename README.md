@@ -31,4 +31,4 @@ Inverse Design: Given a desired phase spectrum, what paramaters result in said p
 ![image](/Images/Summary.png)
 
 
-While the 
+Comparing the accuracy from the test set and the validation, we see similar values suggesting that we have likely not overfit our systems, which is positive. Ideally, the accuracy would be higher, but it should be noted that the dataset is excpetionally small, and wasn't originally designed for this purpose. Rather, I developed this dataset for a different project and this project was born as a result of my mere curiousity. Additionally, one of the challenges of designing in the metasurface realm is the issue of coupling and other offects that are very hard to predict. Based on my experience, a larger and better designed dataset could really help with this. 
