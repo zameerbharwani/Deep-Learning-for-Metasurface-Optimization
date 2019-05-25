@@ -4,8 +4,6 @@ Optimization of single-element metasurface parameters using deep learning (non-l
 
 For the powerpoint, there are animations so I recommend watching it in slide show mode.
 
-_**Scripts to follow soon**_
-
 _Everything published in this repo has been done so with permission_
 
 # Background
