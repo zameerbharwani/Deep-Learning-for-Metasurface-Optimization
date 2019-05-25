@@ -28,7 +28,7 @@ Inverse Design: Given a desired phase spectrum, what paramaters result in said p
 
 # Results
 
-![image]()
+![image](/Images/Summary.png)
 
 
 While the 
