@@ -1,0 +1,4 @@
+2. Check validation set
+ 4. Get graphs of actual vs predicted for test
+5. Get graphs of actual vs predicted for validation
+6. Create markdown file with all results
