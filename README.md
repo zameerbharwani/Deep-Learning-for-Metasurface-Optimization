@@ -28,6 +28,5 @@ Inverse Design: Given a desired phase spectrum, what paramaters result in said p
 
 # Results
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-
+![image](/Users/zameerbharwani/Desktop/Projects/tensorflow_proj/Images/Screen\ Shot\ 2019-05-25\ at\ 6.52.52\ PM.png)
 
