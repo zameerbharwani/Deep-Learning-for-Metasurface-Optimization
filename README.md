@@ -55,6 +55,6 @@ _test_x.txt_: results of test(15%)/train(70%)/validation(15%) split <br> <br>
 _test_y.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
 _train_x.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
 _train_y.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
-_val_x.txt: results of test(15%)/train(70%)/validation(15%) split <br><br>
-val_y.txt: results of test(15%)/train(70%)/validation(15%) split <br><br>
-validation_results.zip: Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic! <br><br>
+_val_x.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
+_val_y.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
+_validation_results.zip_: Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic! <br> <br>
