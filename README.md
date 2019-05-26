@@ -44,20 +44,17 @@ I performed some optimization to fine tune the hyperparamters. The default value
 
 **Files**:
 
-Input.csv: input features
-Output.csv: corresponding phase spectrum
-Presentation.pptx.zip: part of my presentation at Harvard SEAS (annotated with notes, recommended to view in slideshow mode)
-core.py: script
-my_model.h5: saved model
-my_model_weights.h5: saved model weights
-test_results.zip: Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic!
-test_x.txt: results of test(15%)/train(70%)/validation(15%) split
-test_y.txt: results of test(15%)/train(70%)/validation(15%) split
-train_x.txt: results of test(15%)/train(70%)/validation(15%) split
-train_y.txt: results of test(15%)/train(70%)/validation(15%) split
-val_x.txt: results of test(15%)/train(70%)/validation(15%) split
-val_y.txt: results of test(15%)/train(70%)/validation(15%) split
-validation_results.zip: Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic!
-	
-
-
+Input.csv: input features <br>
+Output.csv: corresponding phase spectrum <br>
+Presentation.pptx.zip: part of my presentation at Harvard SEAS (annotated with notes, recommended to view in slideshow mode) <br>
+core.py: script <br>
+my_model.h5: saved model <br>
+my_model_weights.h5: saved model weights<br>
+test_results.zip: Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic! <br>
+test_x.txt: results of test(15%)/train(70%)/validation(15%) split <br>
+test_y.txt: results of test(15%)/train(70%)/validation(15%) split <br>
+train_x.txt: results of test(15%)/train(70%)/validation(15%) split <br>
+train_y.txt: results of test(15%)/train(70%)/validation(15%) split <br>
+val_x.txt: results of test(15%)/train(70%)/validation(15%) split <br>
+val_y.txt: results of test(15%)/train(70%)/validation(15%) split <br>
+validation_results.zip: Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic! <br>
