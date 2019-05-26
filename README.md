@@ -51,7 +51,7 @@ core.py: script <br>
 my_model.h5: saved model <br>
 my_model_weights.h5: saved model weights<br>
 test_results.zip: Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic! <br>
-test_x.txt: results of test(15%)/train(70%)/validation(15%) split <br>
+test_x.txt: results of test(15%)/train(70%)/validation(15%) split <br> <br>
 test_y.txt: results of test(15%)/train(70%)/validation(15%) split <br>
 train_x.txt: results of test(15%)/train(70%)/validation(15%) split <br>
 train_y.txt: results of test(15%)/train(70%)/validation(15%) split <br>
