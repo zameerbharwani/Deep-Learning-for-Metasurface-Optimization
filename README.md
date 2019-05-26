@@ -39,3 +39,25 @@ Comparing the accuracy from the test set and the validation, we see similar valu
 One exciting result shown in the image above is from the test set (top) and validation set (bottom). The reason this is interesting is becaause the network predicted a phase of 0 radians when the FDTD software converged on -2π. In reality these are the same phase values, but it appears that the network is able to learn that phase wraps, with it being explicitly put in the code. The way to justify it is via the non-linear regression process. An easy example is the case of isotropic structures. For isotropic structures, we know the phase is 0 across the entire spectrum. However, sometimes the FDTD software will provide 2π radians as the solution or 0 radians as the solution. This means in the training process, there are isotropic structures with 0 radians and 2π radians,a nd through the non-linear regression process, the network detected this pattern because it helped minimize the loss. The same can be said about non-isotropic structures.
 
 ## Understanding this Repo
+
+I performed some optimization to fine tune the hyperparamters. The default values in core.py represent the optimized values.
+
+**Files**:
+
+Input.csv: input features
+Output.csv: corresponding phase spectrum
+Presentation.pptx.zip: part of my presentation at Harvard SEAS (annotated with notes, recommended to view in slideshow mode)
+core.py: script
+my_model.h5: saved model
+my_model_weights.h5: saved model weights
+test_results.zip: Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic!
+test_x.txt: results of test(15%)/train(70%)/validation(15%) split
+test_y.txt: results of test(15%)/train(70%)/validation(15%) split
+train_x.txt: results of test(15%)/train(70%)/validation(15%) split
+train_y.txt: results of test(15%)/train(70%)/validation(15%) split
+val_x.txt: results of test(15%)/train(70%)/validation(15%) split
+val_y.txt: results of test(15%)/train(70%)/validation(15%) split
+validation_results.zip: Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic!
+	
+
+
