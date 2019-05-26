@@ -58,3 +58,9 @@ _train_y.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
 _val_x.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
 _val_y.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
 _validation_results.zip_: Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic! <br> <br>
+
+### Final Remarks ###
+
+I will be presenting some of these reults at Photonica 2019 on the topic of Machine Learning in Photonics. The conference will be hosted in August in Belgrade, Serbia. 
+
+http://www.photonica.ac.rs/index.php
