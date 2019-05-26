@@ -61,6 +61,4 @@ _validation_results.zip_: Validation set result graphs comparing actual vs predi
 
 ### Final Remarks: ###
 
-I will be presenting some of these reults at Photonica 2019 on the topic of Machine Learning in Photonics. The conference will be hosted in August in Belgrade, Serbia. 
-
-http://www.photonica.ac.rs/index.php
+I will be presenting some of these results at Photonica 2019 on the topic of Machine Learning in Photonics in Belgrade. The conference will be hosted in August: http://www.photonica.ac.rs/index.php
