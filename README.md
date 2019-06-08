@@ -51,13 +51,18 @@ _core.py_: script <br><br>
 _my_model.h_5: saved model <br><br>
 _my_model_weights.h5_: saved model weights<br><br>
 _test_results.zip_: Test set result graphs comparing actual vs prediction. Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic! <br><br>
+_validation_results.zip_: Validation set result graphs comparing actual vs prediction. Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic! <br> <br>
+
+Go through the above two *.zips to find other interesting patterns and get a sense of how well the network works with the given dataset and hyperparametrs. There are certainly some good predictions in there! <b/r><b/r>
+
+
 _test_x.txt_: results of test(15%)/train(70%)/validation(15%) split <br> <br>
 _test_y.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
 _train_x.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
 _train_y.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
 _val_x.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
 _val_y.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
-_validation_results.zip_: Validation set result graphs comparing actual vs prediction. Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic! <br> <br>
+
 
 ### Final Remarks: ###
 
