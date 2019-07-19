@@ -6,6 +6,9 @@ For the powerpoint, there are animations so I recommend watching it in slide sho
 
 _Everything published in this repo has been done so with permission_
 
+I will be presenting this work at [ML-Photonics](http://www.photonica.ac.rs/index.php) on the topic of **Machine Learning in Photonics** at the _Serbian Academy of Sciences and Arts_.
+
+
 # Background
 
 Metasurfaces are used to manipulate light in various manners for a plethora of applications. Current state-of-the-art methods to design these nanostructures are quite medieval and rely on a mere brute force method. That is, given a desired output, what combination of metasurface parameters can give us the values closest to what we seek? To answer this question, researchers rely on simulation software and perform thousands of parameter sweeps in hope that they find the best combination. The cost of the simulations are high, both in terms of time and computing power, especially in a research setting where many people are simultaneously working on the same cluster (see slide 18). 
