@@ -65,7 +65,3 @@ _train_y.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
 _val_x.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
 _val_y.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
 
-
-### Final Remarks: ###
-
-I will be presenting some of these results at Photonica 2019 on the topic of Machine Learning in Photonics in Belgrade. The conference will be hosted in August: http://www.photonica.ac.rs/index.php
