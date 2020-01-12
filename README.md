@@ -36,9 +36,13 @@ Inverse Design: Given a desired phase spectrum, what paramaters result in said p
 
 Comparing the accuracy from the test set and the validation, we see similar values suggesting that we have likely not overfit our systems, which is positive. Ideally, the accuracy would be higher, but it should be noted that the dataset is excpetionally small, and wasn't originally designed for this purpose. Rather, I developed this dataset for a different project and this project was born as a result of my mere curiousity. Additionally, one of the challenges of designing in the metasurface realm is the issue of coupling and other offects that are very hard to predict. Based on my experience, a larger and better designed dataset could really help with this. Another reason the accuracy might not be as high can be explained by the fact that phase wraps around 2π, meaning that 0 is the same as 2π is the same as 12π. It is likely (verified by image below) that the network predicts a phase that when wrapped to 2π is the same value as the actual phase. 
 
-Here are some other candidate results that show the potential of the network:
+Here are some other candidate results that show the potential of the network (validation):
 
-![image](/Images/results.png)
+![image](/Images/results_validation.png)
+
+Here are some other candidate results that show the potential of the network (test):
+
+![image](/Images/results_test.png)
 
 
 One exciting result shown in the images below is from the test set (top) and validation set (bottom). The reason this is interesting is becaause the network predicted a phase of 0 radians when the FDTD software converged on -2π. In reality these are the same phase values, but it appears that the network is able to learn that phase wraps, with it being explicitly put in the code (a consequence of trying to minimize the loss). The way to justify it is via the non-linear regression process. An easy example is the case of isotropic structures. For isotropic structures, we know the phase is 0 across the entire spectrum. However, sometimes the FDTD software will provide 2π radians as the solution or 0 radians as the solution. This means in the training process, there are isotropic structures with 0 radians and 2π radians, and through the non-linear regression process, the network detected this pattern because it helped minimize the loss. The same can be said about non-isotropic structures. _**It is for this reason training/testing/validating/predicting should be performed with the phase wrapped to 2π**_ (though this can make interpreting the phase spectrum more challenging, so for analysis purposes unwrapping it might be helpful); this is something I will work to update in my free time.
