@@ -40,10 +40,12 @@ Here are some other candidate results that show the potential of the network:
 
 ![image](/Images/results.png)
 
+
+One exciting result shown in the images below is from the test set (top) and validation set (bottom). The reason this is interesting is becaause the network predicted a phase of 0 radians when the FDTD software converged on -2π. In reality these are the same phase values, but it appears that the network is able to learn that phase wraps, with it being explicitly put in the code (a consequence of trying to minimize the loss). The way to justify it is via the non-linear regression process. An easy example is the case of isotropic structures. For isotropic structures, we know the phase is 0 across the entire spectrum. However, sometimes the FDTD software will provide 2π radians as the solution or 0 radians as the solution. This means in the training process, there are isotropic structures with 0 radians and 2π radians, and through the non-linear regression process, the network detected this pattern because it helped minimize the loss. The same can be said about non-isotropic structures. _**It is for this reason training/testing/validating/predicting should be performed with the phase wrapped to 2π**_ (though this can make interpreting the phase spectrum more challenging, so for analysis purposes unwrapping it might be helpful); this is something I will work to update in my free time.
+
+
 ![Validation Set](/Images/val_408.png)
 ![Test Set](/Images/test_434.png)
-
-One exciting result shown in the image above is from the test set (top) and validation set (bottom). The reason this is interesting is becaause the network predicted a phase of 0 radians when the FDTD software converged on -2π. In reality these are the same phase values, but it appears that the network is able to learn that phase wraps, with it being explicitly put in the code (a consequence of trying to minimize the loss). The way to justify it is via the non-linear regression process. An easy example is the case of isotropic structures. For isotropic structures, we know the phase is 0 across the entire spectrum. However, sometimes the FDTD software will provide 2π radians as the solution or 0 radians as the solution. This means in the training process, there are isotropic structures with 0 radians and 2π radians, and through the non-linear regression process, the network detected this pattern because it helped minimize the loss. The same can be said about non-isotropic structures. _**It is for this reason training/testing/validating/predicting should be performed with the phase wrapped to 2π**_ (though this can make interpreting the phase spectrum more challenging, so for analysis purposes unwrapping it might be helpful); this is something I will work to update in my free time.
 
 ## Understanding this Repo
 
