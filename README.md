@@ -59,7 +59,7 @@ I performed some optimization to fine tune the hyperparamters. The default value
 _Input.csv_: input features <br><br>
 _Output.csv_: corresponding phase spectrum <br><br>
 _Presentation.pptx.zip_: part of my presentation at Harvard SEAS for the Capasso Group (annotated with notes, recommended to view in slideshow mode) <br><br>
-_core.py_: script <br><br>
+_core.py_: main script <br><br>
 _my_model.h_5: saved model <br><br>
 _my_model_weights.h5_: saved model weights<br><br>
 _test_results.zip_: Test set result graphs comparing actual vs prediction. Note: when going through the images, keep in mind the y-axis values; curves might be closer than they seem since the axes are set to automatic. <br><br>
