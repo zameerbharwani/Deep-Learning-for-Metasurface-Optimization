@@ -6,8 +6,7 @@ For the powerpoint, there are animations so I recommend watching it in slide sho
 
 _Everything published in this repo has been done so with permission_
 
-I will be presenting this work at [ML-Photonica](https://ml-photonica2019.astonphotonics.uk) on the topic of **"Machine Learning in Photonics"** at the **_Serbian Academy of Sciences and Arts_**.
-
+I will be presenting this work at [ML-Photonica](https://ml-photonica2019.astonphotonics.uk) on the topic of **"Machine Learning in Photonics"**
 
 # Background
 
@@ -15,9 +14,9 @@ Metasurfaces are used to manipulate light in various manners for a plethora of a
 
 In performing these vast parameter sweeps, researchers unknowingly built a powerful dataset. During my time at Harvard, I realized this and decided to aggregate some few thousand of my simulations and use it as a proof of concept that there exists a better and more efficient way to optimize metasurface parameters; deep learning. 
 
-Attached is part of the presentation for the talk I gave to my colleagues at the Capasso Group in Harvard University's Applied Physics Department along with some results using the scatternet repo from MIT. The Capaso group is primarily comprised of physicists and thus a component of this presentation is on some of the basics of neural networks, which I think might be heplful to some people. Given that the talk was oral and the slides were merely visual aids, I've added some notes at the bottom of some slides for clarity. 
+Attached is part of the presentation for the talk I gave to my colleagues at the Capasso Group in Harvard University's Applied Physics Department along with some results using the Scatternet repo from MIT. A component of this presentation contains some of the basics of neural networks, which I think might be heplful. Given that the talk was oral and the slides were merely visual aids, I've added some notes at the bottom of some slides for clarity. 
 
-Due to the success with the scatternet repo (Nanophotonic Particle Simulation and Inverse Design), I have now built a better/simpler version designed for metasurface parameter optimization. Currently, there is only code for the forward design, though the inverse design is the next step. I will not be further developing my inverse design code due to time limitations and thus will not be posting it. I would highly recommend taking a look at the inverse design developed in the scatternet repo. Let it be noted that even though this repo is only for the forward design and thus does not alleviae the problem of brute force, it does offer two things:
+Due to the success with the Scatternet repo (Nanophotonic Particle Simulation and Inverse Design), I have now built a better/simpler version designed for metasurface parameter optimization. Currently, there is only code for the forward design, though the inverse design is the next step. I will not be further developing my inverse design code due to time limitations, though would highly recommend taking a look at the inverse design schme developed in the Scatternet repo for ideas on how to do such a thing. Let it be noted that even though this repo is only for the forward design and thus does not alleviae the problem of brute force, it does offer two things:
 
 1) Since deep learning is merely vectors/matrices, all computations are analytical and faster by up to 1200x compared to the simulation methods used currently, which are numerical
 
@@ -34,7 +33,7 @@ Inverse Design: Given a desired phase spectrum, what paramaters result in said p
 ![image](/Images/Summary.png)
 
 
-Comparing the accuracy from the test set and the validation, we see similar values suggesting that we have likely not overfit our systems, which is positive. Ideally, the accuracy would be higher, but it should be noted that the dataset is excpetionally small, and wasn't originally designed for this purpose. Rather, I developed this dataset for a different project and this project was born as a result of my mere curiousity. Additionally, one of the challenges of designing in the metasurface realm is the issue of coupling and other offects that are very hard to predict. Based on my experience, a larger and better designed dataset could really help with this. Another reason the accuracy might not be as high can be explained by the fact that phase wraps around 2π, meaning that 0 is the same as 2π is the same as 12π. It is likely (verified by image below) that the network predicts a phase that when wrapped to 2π is the same value as the actual phase. 
+Comparing the accuracy from the test set and the validation, we see similar values suggesting that we have likely not overfit our systems, which is positive. Ideally, the accuracy would be higher, but it should be noted that the dataset is excpetionally small, and wasn't originally designed for this purpose. Rather, I developed this dataset for a different project and this project was born as a result of tangential curiousity. Additionally, one of the challenges of designing in the metasurface realm is the issue of coupling and other offects that are very hard to predict. Based on my experience, a larger and better designed dataset could really help with this. Another reason the accuracy might not be as high can be explained by the fact that phase wraps around 2π, meaning that 0 is the same as 2π is the same as 12π. It is likely (verified by image below) that the network predicts a phase, that when wrapped to 2π, is the same value as the actual phase. So even though the actual values and predicted values differ, their physical interpretation are the exact same. I think this is something to be very excited by and I briefly explain it below.
 
 Here are some other candidate results that show the potential of the network (validation):
 
@@ -45,7 +44,7 @@ Here are some other candidate results that show the potential of the network (te
 ![image](/Images/results_test.png)
 
 
-One exciting result shown in the images below is from the test set (top) and validation set (bottom). The reason this is interesting is becaause the network predicted a phase of 0 radians when the FDTD software converged on -2π. In reality these are the same phase values, but it appears that the network is able to learn that phase wraps, with it being explicitly put in the code (a consequence of trying to minimize the loss). The way to justify it is via the non-linear regression process. An easy example is the case of isotropic structures. For isotropic structures, we know the phase is 0 across the entire spectrum. However, sometimes the FDTD software will provide 2π radians as the solution or 0 radians as the solution. This means in the training process, there are isotropic structures with 0 radians and 2π radians, and through the non-linear regression process, the network detected this pattern because it helped minimize the loss. The same can be said about non-isotropic structures. _**It is for this reason training/testing/validating/predicting should be performed with the phase wrapped to 2π**_ (though this can make interpreting the phase spectrum more challenging, so for analysis purposes unwrapping it might be helpful); this is something I will work to update in my free time.
+One exciting result shown in the images below is from the test set (top) and validation set (bottom). The reason this is interesting is because the network predicted a phase of 0 radians when the FDTD software converged on -2π. In reality these are the same phase values, but it appears that the network is able to learn that phase wraps, without it being explicitly put in the code (likely a consequence of trying to minimize the loss). The way to justify it is via the non-linear regression process. An easy example is the case of isotropic structures. For isotropic structures, we know the phase is 0 across the entire spectrum. However, sometimes the FDTD software will provide 2π radians as the solution or 0 radians as the solution. This means in the training process, there are isotropic structures with 0 radians and 2π radians, and through the non-linear regression process, the network detected this pattern because it helped minimize the loss. The same can be said about non-isotropic structures. _**It is for this reason training/testing/validating/predicting should be performed with the phase wrapped to 2π**_ (though this can make interpreting the phase spectrum more challenging, so for analysis purposes unwrapping it might be helpful).
 
 
 ![Validation Set](/Images/val_408.png)
@@ -63,10 +62,10 @@ _Presentation.pptx.zip_: part of my presentation at Harvard SEAS for the Capasso
 _core.py_: script <br><br>
 _my_model.h_5: saved model <br><br>
 _my_model_weights.h5_: saved model weights<br><br>
-_test_results.zip_: Test set result graphs comparing actual vs prediction. Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic! <br><br>
-_validation_results.zip_: Validation set result graphs comparing actual vs prediction. Note: when going through the images, keep in mind the y-axis values! Curves might be closer than the seem since the axes are set to automatic! <br> 
+_test_results.zip_: Test set result graphs comparing actual vs prediction. Note: when going through the images, keep in mind the y-axis values; curves might be closer than they seem since the axes are set to automatic. <br><br>
+_validation_results.zip_: Validation set result graphs comparing actual vs prediction. Note: when going through the images, keep in mind the y-axis values; curves might be closer than they seem since the axes are set to automatic. <br> 
 
-__Go through the above two *.zips to find other interesting patterns and get a sense of how well the network works with the given dataset and hyperparametrs. There are certainly some good predictions in there! <br>__
+<br>__
 
 _test_x.txt_: results of test(15%)/train(70%)/validation(15%) split <br> <br>
 _test_y.txt_: results of test(15%)/train(70%)/validation(15%) split <br><br>
