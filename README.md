@@ -6,7 +6,7 @@ For the powerpoint, there are animations so I recommend watching it in slide sho
 
 _Everything published in this repo has been done so with permission_
 
-I will be presenting this work at [ML-Photonica](https://ml-photonica2019.astonphotonics.uk) on the topic of **"Machine Learning in Photonics"** at the Serbian Academy of Sciences and Arts.
+I will be presenting this work at [Photonica-2019](http://www.photonica.ac.rs/).
 
 # Background
 
