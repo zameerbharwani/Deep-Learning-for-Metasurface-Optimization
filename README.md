@@ -10,22 +10,22 @@ I will be presenting this work at [Photonica-2019](http://www.photonica.ac.rs/).
 
 # Background
 
-Metasurfaces are used to manipulate light in various manners for a plethora of applications. Current state-of-the-art methods to design these nanostructures are quite medieval and rely on a brute force strategy. That is, given a desired output, what combination of metasurface parameters can give us the values closest to what we seek (forward design)? To answer this question, researchers rely on simulation software and perform thousands of parameter sweeps in hope that they find the best combination. The cost of the simulations are high, both in terms of time and computing power, especially in a research setting where many people are simultaneously working on the same cluster (see slide 18). 
+Metasurfaces are used to manipulate light in various manners for a plethora of applications. Current state-of-the-art methods to design these nanostructures are quite medieval and rely on a brute force strategy. That is, given a desired output, what combination of metasurface parameters can give us the values closest to what we seek? To answer this question, researchers rely on simulation software and perform thousands of parameter sweeps in hope that they find the best combination. The cost of the simulations are high, both in terms of time and computing power, especially in a research setting where many people are simultaneously working on the same cluster (see slide 18). This is the forward design approach.
 
-In performing these vast parameter sweeps, researchers unknowingly built a powerful dataset. During my time at Harvard, I realized this and decided to aggregate some few thousand of my simulations and use it as a proof of concept that there exists a better and more efficient way to optimize metasurface parameters; deep learning. 
+In performing these vast parameter sweeps, researchers unknowingly built a powerful dataset. During my time at Harvard, I realized this and decided to aggregate some few thousand of my simulations and used it as a proof of concept that there exists a better and more efficient way to optimize metasurface parameters; deep learning. 
 
-Attached is part of the presentation for the talk I gave to my colleagues at the Capasso Group in Harvard University's Applied Physics Department along with some results using the Scatternet repo from MIT. A component of this presentation contains some of the basics of neural networks, which I think might be heplful. Given that the talk was oral and the slides were merely visual aids, I've added some notes at the bottom of some slides for clarity. 
+Attached is part of the presentation for the talk I gave to my colleagues at the Capasso Group in Harvard University's Applied Physics Department along with some results using the Scatternet repo from a neighbour group at MIT. A component of this presentation contains some of the basics of neural networks, which I think might be heplful. Given that the talk was oral and the slides were merely visual aids, I've added notes at the bottom of some slides for context and clarity. 
 
-Due to the success with the Scatternet repo (Nanophotonic Particle Simulation and Inverse Design), I have now built a better/simpler version designed for metasurface parameter optimization. Currently, there is only code for the forward design, though the inverse design is the next step. I will not be further developing my inverse design code due to time limitations, though would highly recommend taking a look at the inverse design schme developed in the Scatternet repo for ideas on how to do such a thing. Let it be noted that even though this repo is only for the forward design and thus does not alleviae the problem of brute force, it does offer two things:
+Due to the success with the Scatternet repo (Nanophotonic Particle Simulation and Inverse Design), I have now built a better/simpler version designed for metasurface parameter optimization. Currently, there is only code for the forward design, though the inverse design is the next step. I will not be further developing my inverse design code due to time limitations, though would highly recommend taking a look at the inverse design schme developed in the Scatternet repo for ideas on how to do such a thing. Let it be noted that even though this repo is only for the forward design and thus does not alleviate the problem of brute force, it does offer two things:
 
-1) Since deep learning is merely vectors/matrices, all computations are analytical and faster by up to 1200x compared to the simulation methods used currently, which are numerical
+1) Since deep learning is merely vectors/matrices, all computations are analytical and faster by up to 1200x compared to the simulation methods used currently, which are numerical (finite difference time domain)
 
 2) This code for the forward design sets the foundation for the inverse desgin
 
 **Definitions**:
 
 Forward Design: Given a set of input parameters that define a metasurface, predict the phase spectrum <br>
-Inverse Design: Given a desired phase spectrum, what paramaters result in said phase spectrum?
+Inverse Design: Given a desired phase spectrum, work backwards to determine what paramaters will result in said phase spectrum? This would alleviate the need for all brute force strategies, whether it be numerical brute force or analytical brute force.
 
 
 # Results
