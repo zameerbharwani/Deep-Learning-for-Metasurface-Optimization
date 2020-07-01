@@ -10,7 +10,7 @@ I will be presenting this work at [Photonica-2019](http://www.photonica.ac.rs/).
 
 # Background
 
-Metasurfaces are used to manipulate light in various manners for a plethora of applications. Current state-of-the-art methods to design these nanostructures are quite medieval and rely on a brute force strategy. That is, given a desired output, what combination of metasurface parameters can give us the values closest to what we seek? To answer this question, researchers rely on simulation software and perform thousands of parameter sweeps in hope that they find the best combination. The cost of the simulations are high, both in terms of time and computing power, especially in a research setting where many people are simultaneously working on the same cluster (see slide 18). This is the forward design approach.
+Metasurfaces are used to manipulate light in various manners for a plethora of applications. Current state-of-the-art methods to design these nanostructures are quite medieval and rely on a brute force strategy. That is, given a desired output, what combination of metasurface parameters can give us the values closest to what we seek? To answer this question, researchers rely on simulation software and perform thousands of parameter sweeps in hope that they find the best combination. The costs of the simulations are high, both in terms of time and computing power, especially in a research setting where many people are simultaneously working on the same cluster (see slide 18). This is the forward design approach.
 
 In performing these vast parameter sweeps, researchers unknowingly built a powerful dataset. During my time at Harvard, I realized this and decided to aggregate some few thousand of my simulations and used it as a proof of concept that there exists a better and more efficient way to optimize metasurface parameters; deep learning. 
 
@@ -20,7 +20,7 @@ Due to the success with the Scatternet repo (Nanophotonic Particle Simulation an
 
 1) Since deep learning is merely vectors/matrices, all computations are analytical and faster by up to 1200x compared to the simulation methods used currently, which are numerical (finite difference time domain). So even though this is still brute force, it is a significantly faster brute force!
 
-2) This code for the forward design sets the foundation for the inverse desgin
+2) This code for the forward design sets the foundation for the inverse design.
 
 **Definitions**:
 
