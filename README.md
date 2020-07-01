@@ -1,6 +1,6 @@
 # Deep Learning for Metasurface Optimization
 
-Optimization of single-element metasurface parameters using deep learning (non-linear regression) with tensorflow/keras and ~5600 Lumerical simulations as training data. Simulations performed under normally incident light. The features that define metasurface are the 1.length (L) 2.width (W) 3. height (H) 4.x-direction periodicity (Ux) 5. y-direction periodicity (Uy). The output is the phase spectrum around and across the visible at increments of 5 nm (450 nm - 800 nm).
+Optimization of single-element metasurface parameters using deep learning with tensorflow/keras and ~5600 Lumerical simulations as training data. Simulations performed under normally incident light. The features that define metasurface are the 1.length (L) 2.width (W) 3. height (H) 4.x-direction periodicity (Ux) 5. y-direction periodicity (Uy). The output is the phase spectrum around and across the visible at increments of 5 nm (450 nm - 800 nm).
 
 For the powerpoint, there are animations so I recommend watching it in slide show mode.
 
