@@ -18,13 +18,13 @@ Attached is part of the presentation for the talk I gave to my colleagues at the
 
 Due to the success with the Scatternet repo (Nanophotonic Particle Simulation and Inverse Design), I have now built a better/simpler version designed for metasurface parameter optimization. Currently, there is only code for the forward design, though the inverse design is the next step. I will not be further developing my inverse design code due to time limitations, though would highly recommend taking a look at the inverse design schme developed in the Scatternet repo for ideas on how to do such a thing. Let it be noted that even though this repo is only for the forward design and thus does not alleviate the problem of brute force, it does offer two things:
 
-1) Since deep learning is merely vectors/matrices, all computations are analytical and faster by up to 1200x compared to the simulation methods used currently, which are numerical (finite difference time domain)
+1) Since deep learning is merely vectors/matrices, all computations are analytical and faster by up to 1200x compared to the simulation methods used currently, which are numerical (finite difference time domain). So even though this is still brute force, it is a significantly faster brute force!
 
 2) This code for the forward design sets the foundation for the inverse desgin
 
 **Definitions**:
 
-*Forward Design*: Given a set of input parameters that define a metasurface, predict the phase spectrum <br>
+*Forward Design*: Given a set of input parameters that define a metasurface, predict the phase spectrum. <br>
 <br>
 *Inverse Design*: Given a desired phase spectrum, work backwards to determine what paramaters will result in said phase spectrum? This would alleviate the need for all brute force strategies, whether it be numerical brute force or analytical brute force.
 
