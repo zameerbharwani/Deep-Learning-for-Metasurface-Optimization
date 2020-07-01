@@ -24,8 +24,9 @@ Due to the success with the Scatternet repo (Nanophotonic Particle Simulation an
 
 **Definitions**:
 
-Forward Design: Given a set of input parameters that define a metasurface, predict the phase spectrum <br>
-Inverse Design: Given a desired phase spectrum, work backwards to determine what paramaters will result in said phase spectrum? This would alleviate the need for all brute force strategies, whether it be numerical brute force or analytical brute force.
+*Forward Design*: Given a set of input parameters that define a metasurface, predict the phase spectrum <br>
+<br>
+*Inverse Design*: Given a desired phase spectrum, work backwards to determine what paramaters will result in said phase spectrum? This would alleviate the need for all brute force strategies, whether it be numerical brute force or analytical brute force.
 
 
 # Results
